@@ -1,0 +1,56 @@
+.specialties
+  background:  url('../img/bg3.jpg') no-repeat center /cover
+  position: relative
+  width: 100%
+  max-width: 100%
+  &::after
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        position: absolute
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(a71b6351677965.58f66d768)
+  &__block
+    padding-top: 4.166rem
+    padding-bottom: 8.333rem
+    display: flex
+    align-items: center
+    z-index: 4
+    position: relative
+  &__clarification
+    color: $light
+    letter-spacing: 0.5em
+    font-size: 1rem // 12px
+    line-height: 1.116rem
+    font-family: Open-sans, sans-serif
+    display: flex
+    justify-content: center
+    padding-top: 4.166rem
+    padding-bottom: 4.166rem
+    text-transform: uppercase
+    z-index: 4
+    position: relative
+
+.four__img
+    background: url('../img/specialties-img.jpg') no-repeat center
+    height: 39.583rem
+    width: 39.583rem
+    position: relative
+    border-radius: 0.414rem
+    filter: drop-shadow(0 0 4.166rem rgba(0, 0, 0, 0.5))
+    border-radius: 0.414rem
+    &::before
+        position: absolute
+        content: ''
+        border: 1.666rem solid $primaryButton
+        filter: drop-shadow(0 0 8.333rem rgba(0, 0, 0, 0.5))
+        border-radius: 0.414rem
+        width: 20.833rem // 250px
+        height: 20.833rem
+        top: 50%
+        margin-top: -10.416rem
+        right: 50%
+        margin-right: 10.416rem
+
+        

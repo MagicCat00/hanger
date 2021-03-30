@@ -1,0 +1,87 @@
+//адаптация
+@media ( max-width: 106.666rem )
+    .container
+        width: 98%
+    //hero
+    .hero__title
+        font-size: 5rem
+    //куртинки
+    .one__img , .two__img , .three__img , .four__img 
+        width: 30rem
+        height: 30rem
+        &::before
+            height: 15rem
+            width: 15rem
+    .two__img::before , .four__img::before
+        margin-right: 0rem
+
+    //forma
+    .form__item 
+        width: 17rem
+    //private
+    .events__imgs
+        flex-direction: column
+        align-items: center
+
+    .events__img
+        margin-bottom: 5rem
+
+@media ( max-width: 82.666rem )
+    //header
+    .header__menu__item 
+        padding: 4.166rem 1rem
+
+    //hero
+    .hero__title
+        font-size: 4rem
+    .button--primary
+        margin-right: 0.5rem
+
+    .hero
+        margin-top: -25rem
+    .hero__block
+        flex-direction: column
+    .hero__timetable__block  , .hero__social-links , .hero__social-link
+        transform: none
+        margin-top: 2rem
+
+    //вертикадьное положение текста и картинок
+    .abouts__block , .team__block , .book__block , .specialties__block
+        flex-wrap: wrap-reverse
+        align-items: center
+        justify-content: center
+
+    //отступы между текстом и картинками
+
+    .abouts__img__block , .book__img__block
+        margin-bottom: 5rem
+    .team__img__block , .specialties__img__block
+        margin-top: 5rem
+
+    //форма
+    .form__item
+        width: 89%
+
+@media ( max-width: 46.666rem )
+    //header
+    .header__menu
+        flex-wrap: wrap
+
+    .header__logo
+        display: none
+    //hero
+    .hero
+        margin-top: -25rem
+    .hero__block
+        flex-direction: column
+    .hero__timetable__block  , .hero__social-links , .hero__social-link
+        transform: none
+        margin-top: 2rem
+
+    //master chef
+    .menu__button
+        padding: 1rem
+
+    //private
+    .events__img__2::before , .events__img::before
+        display: none

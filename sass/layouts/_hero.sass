@@ -1,0 +1,94 @@
+.hero
+    padding-top: 27.166rem // 326px
+    padding-bottom: 21.25rem // 255px
+    margin-top: -14.916rem // 179px
+    color: $light
+    position: relative
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header-bg.jpg") no-repeat center / cover;
+    &::before
+        content: ''
+        position: absolute
+        bottom: 9.416rem // 12px
+        left: 50%
+        margin-left: -1.666rem // 20px
+        width: 3.333rem // 40px
+        height: 3.333rem 
+        border-radius: 50%
+        background: $light url('../img/arrow-b.svg') no-repeat center
+        cursor: pointer
+    &::after
+        content: ''
+        position: absolute
+        bottom: 8.5rem // 102px
+        left: 50%
+        margin-left: -2.583rem // 31px
+        width: 5rem // 60px
+        height: 5rem
+        border: 0.083rem solid rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+        cursor: pointer
+
+    &__block
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__timetable__block
+        transform: rotate(-90deg)
+        height: 2.5rem // 30px
+
+    &__info__block
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+    &__subtitle
+        font-weight: bold
+        line-height: 1.166rem
+
+    &__title
+        font-family: Banny Round
+        font-size: 8rem
+        text-transform: uppercase
+        position: relative
+        &::before
+            content: ''
+            width: 5rem
+            height: 0.416rem // 5px
+            background: $primaryButton
+            border-radius: 4.166rem // 50px
+            position: absolute
+            bottom: -2.5rem
+            left: 50%
+            margin-left: -2.5rem
+    &__buttons
+        max-width: 36.666rem // 440px
+        width: 100%
+        
+    &__button
+        width: 16.666rem // 200px
+        height: 5rem
+
+    &__social-links
+        display: flex
+        transform: rotate(-90deg)
+
+    &__social-link
+        width: 5rem
+        height: 5rem
+        border: 0.083rem solid rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+        margin-bottom: 1.666rem
+        margin: 0 0.833rem 0 0.833rem
+        transform: rotate(90deg)
+
+    &__facebook
+        background: url("../img/facebook.svg") no-repeat center
+
+    &__twiter
+        background: url("../img/twiter.svg") no-repeat center
+
+    &__instagram
+        background: url("../img/instagram.svg") no-repeat center
